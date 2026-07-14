@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FatalTy</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background -->
+    <div id="background"></div>
+
+    <!-- Film Grain -->
+    <div id="grain"></div>
+
+    <!-- CRT -->
+    <div id="crt"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1>loading...</h1>
+        <p>please wait</p>
+        <p id="boot-text"></p>
+    </div>
+
+    <main class="container">
+        <section class="window">
+            <header class="window-header">
+                
+
+    <span>FatalTy</span>
+
+    <div class="window-buttons">
+
+        <button class="win-btn minimize" type="button">_</button>
+
+        <button class="win-btn maximize" type="button">□</button>
+
+        <button class="win-btn close" type="button">✕</button>
+
+    </div>
+
+</header>
+
+            <section class="hero">
+                <img src="./img/yasuo.png" alt="Rei">
+
+                <div class="hero-text">
+                    <h1>FatalTy</h1>
+                    <h2>offline, maybe.</h2>
+
+                    <p>
+                        i like games.
+                        <br><br>
+                        mostly listening to music,
+                        learning web development,
+                        and wasting time online.
+                    </p>
+                </div>
+            </section>
+
+            <section class="quote">
+                <p>"nothing lasts forever."</p>
+            </section>
+
+            <section class="about">
+                <h3>about.txt</h3>
+
+                <p>
+                    i like games.
+                    <br><br>
+                    mostly listening to music,
+                    learning web development,
+                    and wasting time online.
+                </p>
+            </section>
+
+            <section class="desktop-icons">
+                <a class="desktop-icon"
+                   href="https://open.spotify.com/user/31sf3k65zpx3h7j3aojcpeszo2ce?si=caed5285dd264afd"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-spotify"></i>
+                    <span>spotify.exe</span>
+                </a>
+
+                <a class="desktop-icon"
+                   href="https://www.tiktok.com/@hxbatat4"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>tiktok.url</span>
+                </a>
+
+                <a class="desktop-icon"
+                   href="https://steamcommunity.com/id/BATATA11110020/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fa-brands fa-steam"></i>
+                    <span>steam.exe</span>
+                </a>
+
+                <button class="desktop-icon" id="about-file" type="button">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>about.txt</span>
+                </button>
+            </section>
+
+            <div class="xp-window hidden" id="about-window">
+                <div class="xp-titlebar">
+                    <span>about.txt</span>
+                    <button id="close-about" type="button">×</button>
+                </div>
+
+                <div class="xp-content">
+<pre>name:        Calebe
+alias:       FatalTy
+
+age:         16
+
+country:     Brazil
+
+status:      online sometimes
+
+interests:
+- games
+- music
+- web development</pre>
+                </div>
+            </div>
+
+            <section class="music">
+                <h3>now playing</h3>
+
+                <audio controls>
+                    <source src="./audio/music.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+
+            <footer>
+                <div>
+                    visitor
+                    <span id="visitor-count">000001</span>
+                </div>
+
+                <div id="clock">00:00</div>
+            </footer>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
